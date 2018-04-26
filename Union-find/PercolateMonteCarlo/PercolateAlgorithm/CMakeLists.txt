@@ -3,7 +3,7 @@
 # * file 'LICENSE.txt', which is part of this source code package.
 # ----------------------------------------------------------------
 cmake_minimum_required(VERSION 3.5.0 FATAL_ERROR)
-project(unionfindalgorithm
+project(percolatealgorithm
   LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -15,8 +15,9 @@ include_directories(
 include/
 )
 
-add_executable(unionfindalgorithm
-src/union_find.cpp
+add_executable(percolatealgorithm
+src/percolate.cpp
+src/percolate_stats.cpp
 main.cpp)
 
-install(TARGETS unionfindalgorithm RUNTIME DESTINATION bin)
+install(TARGETS percolatealgorithm RUNTIME DESTINATION bin)
